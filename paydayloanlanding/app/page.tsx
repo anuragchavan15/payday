@@ -290,10 +290,6 @@ export default function PaydayLoanLanding() {
               <Image src="/lending-point-logo.png" alt="Lending Point" width={208} height={34} className="h-9 w-auto" priority />
             </div>
             <div className="flex items-center gap-4">
-              <Badge variant="secondary" className="gap-1 bg-green-100 text-green-800 border-green-200">
-                <Shield className="h-3 w-3" />
-                SSL Secured
-              </Badge>
               <Badge variant="outline" className="border-amber-200 text-amber-800">
                 BBB Accredited
               </Badge>
