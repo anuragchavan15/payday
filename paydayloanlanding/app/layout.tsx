@@ -7,10 +7,10 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Quick Cash",
-  description: "Quick Cash - Fast, secure payday loans up to $10,000",
-  applicationName: "Quick Cash",
-  generator: "Quick Cash",
+  title: "Lending Point",
+  description: "Lending Point - Fast, secure payday loans up to $10,000",
+  applicationName: "Lending Point",
+  generator: "Lending Point",
 }
 
 export default function RootLayout({

@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, DollarSign, Clock, Shield, ArrowRight, AlertCircle, Zap, TrendingUp, Loader2 } from "lucide-react"
+import Image from "next/image"
 
 interface FormData {
   // Step 1: Personal Information
@@ -286,8 +287,7 @@ export default function PaydayLoanLanding() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <DollarSign className="h-8 w-8 text-amber-600" />
-              <span className="text-2xl font-bold text-gray-900">Quick Cash</span>
+              <Image src="/lending-point-logo.png" alt="Lending Point" width={208} height={34} className="h-9 w-auto" priority />
             </div>
             <div className="flex items-center gap-4">
               <Badge variant="secondary" className="gap-1 bg-green-100 text-green-800 border-green-200">
@@ -306,7 +306,7 @@ export default function PaydayLoanLanding() {
       <section className="bg-gradient-to-b from-amber-100/50 to-transparent py-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 text-balance">
-            Get Cash Fast with <span className="text-amber-600">QuickCash</span>
+            Get Cash Fast with <span className="text-amber-600">Lending Point</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 text-pretty max-w-2xl mx-auto">
             Need money today? Get approved for up to $10,000 in minutes with our simple application.
@@ -931,8 +931,9 @@ export default function PaydayLoanLanding() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <DollarSign className="h-6 w-6 text-amber-400" />
-                <span className="text-xl font-bold">QuickCash</span>
+                <div className="bg-white rounded-lg px-3 py-2 inline-flex">
+                  <Image src="/lending-point-logo.png" alt="Lending Point" width={208} height={34} className="h-7 w-auto" />
+                </div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Fast, reliable payday loans when you need them most. Licensed and regulated for your protection.
@@ -988,7 +989,7 @@ export default function PaydayLoanLanding() {
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 QuickCash. All rights reserved. Licensed lender.</p>
+            <p>&copy; 2024 Lending Point. All rights reserved. Licensed lender.</p>
           </div>
         </div>
       </footer>

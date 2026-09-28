@@ -1,0 +1,8 @@
+allowBuilds:
+  '@mongodb-js/zstd': set this to true or false
+  kerberos: set this to true or false
+  mongodb-client-encryption: set this to true or false
+onlyBuiltDependencies:
+  - "@mongodb-js/zstd"
+  - kerberos
+  - mongodb-client-encryption

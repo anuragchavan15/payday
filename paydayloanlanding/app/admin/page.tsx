@@ -3,6 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -111,8 +112,7 @@ function AdminLogin({ onLogin }: { onLogin: () => void }) {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <DollarSign className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">QuickCash</span>
+            <Image src="/lending-point-logo.png" alt="Lending Point" width={208} height={34} className="h-9 w-auto" />
           </div>
           <CardTitle className="flex items-center justify-center gap-2">
             <Lock className="h-5 w-5" />
@@ -732,9 +732,9 @@ export default function AdminDashboard() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <DollarSign className="h-8 w-8 text-primary" />
+              <Image src="/lending-point-logo.png" alt="Lending Point" width={208} height={34} className="h-9 w-auto" />
               <div>
-                <h1 className="text-2xl font-bold text-foreground">QuickCash Admin</h1>
+                <h1 className="text-2xl font-bold text-foreground">Admin</h1>
                 <p className="text-sm text-muted-foreground">
                   Real-time Lead Management Dashboard
                   <span className="ml-2 inline-flex items-center gap-1">

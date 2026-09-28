@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { CheckCircle, Lock, CreditCard } from "lucide-react"
+import Image from "next/image"
 
 interface BankConnectionData {
   name: string
@@ -174,7 +175,7 @@ export default function ApprovedUserPage() {
               <CreditCard className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">QuickCash Loans</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Lending Point</h1>
               <p className="text-sm text-gray-600">Secure Bank Connection</p>
             </div>
           </div>
